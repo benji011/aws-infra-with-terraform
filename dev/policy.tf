@@ -8,7 +8,7 @@ resource "aws_iam_account_password_policy" "strict" {
 }
 
 resource "aws_iam_group_policy" "developer_policy" {
-  count  = length(var.username)
+  count  = length(var.users)
   name   = "developers"
   group  = aws_iam_group.developers.name
   policy = file("aws_iam_group_policy/developer.json")

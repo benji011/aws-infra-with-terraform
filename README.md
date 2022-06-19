@@ -45,31 +45,8 @@ If you are starting out as the admin, then first you must have an AWS account cr
 
 When the time comes to attach policies you and other users in the team can send pull requests and attach them to specific groups (e.g. `developers`) instead of their account directly on the console. This ensures all your users are assigned equal roles and they aren't doing anything they aren't shouldn't be.
 
-Typically, the root user/admins should do this and then send them the credentials. Afterwards only they should know their details and must configure them locally
+Typically, the root user/admins should do this and then send them the credentials. Afterwards only they should know their details and must configure them locally. You can read more about how to do this in [this doc](docs/SETTING_UP_AWS_CLI.md).
 
-```bash
-$ aws configure --profile yourname
-
-AWS Accrss Key ID [None]: Your access key
-AWS Secret Access Key [None]: Your secret access key
-Default region name [None]: eu-west-2
-Default output format [None]: json
-```
-
-If the above is performed correctly your local config file will be stored in `~/.aws/config` and your credentials in `~/.aws/credentials`. For reference, check the profile name to make sure they are configured properly:
-
-```bash
-$ cat ~/.aws/credentials
-[myprofile]
-aws_access_key_id = XXXXXXXXXXXXXXXX
-aws_secret_access_key = XXXXXXXXXXXXXXXX
-```
-
-Export the profile to your provider
-
-```bash
-export AWS_PROFILE=myprofile
-```
 
 
 ## TODO: Formatting

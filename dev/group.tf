@@ -1,6 +1,6 @@
 resource "aws_iam_group_membership" "developers" {
   name  = "developers_group_membership"
-  users = var.username
+  users = var.users
   group = aws_iam_group.developers.name
 }
 

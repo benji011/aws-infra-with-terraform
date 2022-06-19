@@ -1,6 +1,6 @@
-variable "username" {
+variable "users" {
   type    = list(string)
-  default = ["suga", "kishida"]
+  default = ["benny", "suga", "kishida"]
 }
 
 variable "region" {
