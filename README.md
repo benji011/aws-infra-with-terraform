@@ -22,12 +22,13 @@ $ tfenv -v
 # output: tfenv 2.2.3
 ```
 
-At the time of writing this doc I am using `1.0.6`. Install, this version, tell tfenv to use it then check if it has switched versions correctly.
+At the time of writing this doc I am using `1.2.3`. Install, this version, tell tfenv to use it then check if it has switched versions correctly.
 
 ```bash
-$ tfenv install 1.0.6 && tfenv use 1.0.6
+$ tfenv install 1.2.3 && tfenv use 1.2.3
 $ terraform -v
-# output: Terraform v1.0.6
+# output: Terraform v1.2.3
+# on darwin_amd64
 ```
 
 ## Install `aws-cli`
